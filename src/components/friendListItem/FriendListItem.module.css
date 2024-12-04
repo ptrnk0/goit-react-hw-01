@@ -1,0 +1,7 @@
+.frient-item-status {
+    color: red
+}
+
+.frient-item-status.is-online {
+    color: green;
+}

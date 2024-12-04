@@ -1,3 +1,5 @@
+import FriendListItem from '../friendListItem/FriendListItem';
+
 const FriendList = ({ friends }) => {
     return (
         <ul>
