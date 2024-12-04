@@ -1,7 +1,7 @@
-.frient-item-status {
+.friendItemStatus {
     color: red
 }
 
-.frient-item-status.is-online {
+.friendItemStatus.isOnline {
     color: green;
 }
