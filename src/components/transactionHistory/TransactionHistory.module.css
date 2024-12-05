@@ -1,4 +1,4 @@
-table {
+.transactionsTable {
     width: 100%;
     border-collapse: collapse;
     font-family: Arial, sans-serif;
@@ -9,7 +9,7 @@ table {
 
 }
 
-thead th {
+.transactionsTableHead th {
     background-color: black;
     color: white;
     padding: 10px;
@@ -17,16 +17,16 @@ thead th {
     font-weight: bold;
 }
 
-tbody td {
+.transactionsTableBody td {
     padding: 10px;
     border: 1px solid #ccc;
     text-align: center;
 }
 
-tbody tr:nth-child(odd) {
+.transactionsTableBody tr:nth-child(odd) {
     background-color: #f3f3f3;
 }
 
-tbody tr:nth-child(even) {
+.transactionsTableBody tr:nth-child(even) {
     background-color: white;
 }
