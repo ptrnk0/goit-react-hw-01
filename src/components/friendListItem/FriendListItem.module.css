@@ -1,5 +1,12 @@
+.friendsListItemName {
+    text-align: center;
+    margin-top: 10px;
+}
+
 .friendItemStatus {
-    color: red
+    color: red;
+    font-size: 12px;
+    text-align: center;
 }
 
 .friendItemStatus.isOnline {

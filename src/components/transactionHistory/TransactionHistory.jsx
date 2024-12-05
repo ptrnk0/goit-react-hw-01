@@ -1,3 +1,5 @@
+import ccs from './TransactionHistory.module.css';
+
 const TransactionHistory = ({ items }) => {
     return (
         <table>
