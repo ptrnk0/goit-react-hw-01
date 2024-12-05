@@ -2,26 +2,34 @@ import css from './Profile.module.css';
 
 const Profile = ({ userName, tag, location, image, stats }) => {
     return (
-        <div style={css}>
-            <div>
-                <img src={image} alt="User avatar" />
-                <p>{userName}</p>
-                <p>@{tag}</p>
-                <p>{location}</p>
+        <div className={css.profile}>
+            <div className={css.profileInfo}>
+                <div className={css.profileImgThumb}>
+                    <img src={image} alt="User avatar" />
+                </div>
+                <p className={css.profileName}>{userName}</p>
+                <p className={css.profileTag}>@{tag}</p>
+                <p className={css.profileLocation}>{location}</p>
             </div>
 
-            <ul>
-                <li>
+            <ul className={css.profileStatsList}>
+                <li className={css.profileListItem}>
                     <span>Followers</span>
-                    <span>{stats.followers}</span>
+                    <span className={css.profileListItemStat}>
+                        {stats.followers}
+                    </span>
                 </li>
-                <li>
+                <li className={css.profileListItem}>
                     <span>Views</span>
-                    <span>{stats.views}</span>
+                    <span className={css.profileListItemStat}>
+                        {stats.views}
+                    </span>
                 </li>
-                <li>
+                <li className={css.profileListItem}>
                     <span>Likes</span>
-                    <span>{stats.likes}</span>
+                    <span className={css.profileListItemStat}>
+                        {stats.likes}
+                    </span>
                 </li>
             </ul>
         </div>
